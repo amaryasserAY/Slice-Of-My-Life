@@ -1,0 +1,251 @@
+:root {
+  --primarycolor: #18f7ef;
+}
+body {
+  background-color: black;
+}
+/* Start Navbar */
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primarycolor);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--primarycolor);
+}
+.navbar-nav {
+  align-items: center;
+  font-size: 1rem;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+header {
+  background-image: url("../img/Photo.png");
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+header .header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .header-title img {
+  width: 100%;
+}
+
+header .header-body {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding-bottom: 20px;
+}
+
+header .header-body h4 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+header .header-body img {
+  margin-top: 50px;
+  transition: all 0.4s ease-in-out;
+  animation: scroll 3s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(-50px);
+    box-shadow: 0px 0px 30px rgba(24, 247, 239, 0.5);
+  }
+  to {
+    transform: translateY(0);
+    box-shadow: 0 20px 0 rgba(24, 247, 239, 0);
+  }
+}
+
+/* End Header */
+/* Start gallary */
+.gallary h2 {
+  color: #6d91b3;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-bottom: 50px;
+  text-shadow: 0px 5px 30px rgba(24, 247, 239, 0.5);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.gallary p {
+  text-align: center;
+  color: #fff;
+  line-height: 2.5;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.gallary p span {
+  text-align: center;
+  color: #18f7ef;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.gallary a {
+  color: #18f7ef !important;
+  margin-top: 30px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  cursor: pointer;
+}
+.gallary a:hover {
+  background-color: #fff;
+  color: black !important;
+  border-color: #18f7ef;
+}
+.gallary img {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #18f7ef;
+}
+
+/* Start Featurs */
+
+.features {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-color: black;
+}
+
+.features h2 {
+  color: #6d91b3;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-bottom: 50px;
+  text-shadow: 0px 5px 30px rgba(24, 247, 239, 0.5);
+}
+
+.features i {
+  text-align: center;
+  font-size: 40px;
+  color: #18f7ef;
+  margin-bottom: 40px;
+  display: block;
+  background-color: transparent;
+}
+
+.features h3 {
+  color: #6d91b3;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.features p {
+  line-height: 2.5;
+  color: #6d91b3;
+  margin-bottom: 20px;
+}
+
+/* Start contact us */
+
+.contact {
+  padding-top: 40px;
+  background-color: black;
+  text-shadow: 0px 5px 30px rgba(24, 247, 239, 0.5);
+  padding-bottom: 40px;
+  background-image: url("../img/footer.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contact h2 {
+  color: #6d91b3;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.contact .form-control {
+  color: #fff;
+  background-color: black;
+  border: 1px solid #18f7ef;
+}
+
+.contact form label {
+  color: #fff;
+}
+
+.contact textarea {
+  height: 250px;
+}
+
+.contact button {
+  color: #fff;
+  background-color: transparent;
+  border-color: #18f7ef;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.contact button:hover {
+  color: black;
+  background-color: #fff;
+}
+
+/* Start Footer */
+
+footer {
+  padding-top: 40px;
+}
+
+footer img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-color: #18f7ef;
+}
+footer p {
+  line-height: 2.5;
+  color: #fff;
+  margin-bottom: 20px;
+}
+footer hr {
+  border-top: 1px solid #18f7ef;
+}
+
+footer .copy {
+  font-weight: bolder;
+  font-size: 30px;
+  color: #fff;
+  padding-top: 30px;
+}
